@@ -8,6 +8,10 @@ import time	# Makes the tool friendlier
 import string	# Makes the tool easier
 import sys	# Makes the tool expandable
 
+if (sys.argv[1]=="--help" or sys.argv[1]=="-h"):
+        print ("Usage: python proxyborder.py check-these.txt save-here.txt")
+        exit(0)
+
 def getURLtoMakeRequest():
 	
 	#	Return a URL that is up most if not
